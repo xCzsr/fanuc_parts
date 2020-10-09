@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="fanuc_test2">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.023435 0.0037673 0.099323"
+        rpy="0 0 0" />
+      <mass
+        value="5.2083" />
+      <inertia
+        ixx="0.059854"
+        ixy="0.0010775"
+        ixz="0.0043688"
+        iyy="0.081727"
+        iyz="0.00026419"
+        izz="0.11203" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_test2/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_test2/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="0.010194 0.020846 -0.097968"
+        rpy="0 0 0" />
+      <mass
+        value="18.47" />
+      <inertia
+        ixx="0.33089"
+        ixy="0.027051"
+        ixz="-0.015933"
+        iyy="0.33496"
+        iyz="-0.041342"
+        izz="0.29577" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_test2/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_test2/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.425"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="0.00801605126720723 -0.354600742124165 0.32287098012487"
+        rpy="0 0 0" />
+      <mass
+        value="20.7422971529827" />
+      <inertia
+        ixx="1.92087589898799"
+        ixy="-0.0467805500780686"
+        ixz="-0.0196537197885401"
+        iyy="0.122596505346156"
+        iyz="0.0351664984554054"
+        izz="1.96458198067038" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_test2/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_test2/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="revolute">
+    <origin
+      xyz="0.01985 -0.50949 0"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="-0.143593933192592 -0.116063675911493 -0.437523293350243"
+        rpy="0 0 0" />
+      <mass
+        value="13.176843707794" />
+      <inertia
+        ixx="0.221854252135959"
+        ixy="-0.0958975344334554"
+        ixz="-0.0100289554286515"
+        iyy="0.213353136978009"
+        iyz="-0.00174551174402978"
+        izz="0.274899694556658" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_test2/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_test2/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="jont_3"
+    type="revolute">
+    <origin
+      xyz="0.05515 -0.84 0.098335"
+      rpy="3.1416 0 3.1416" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_4">
+    <inertial>
+      <origin
+        xyz="0.0627441219622389 -0.000290809457597354 -0.284181820968234"
+        rpy="0 0 0" />
+      <mass
+        value="8.54554370717763" />
+      <inertia
+        ixx="0.0977362051201773"
+        ixy="3.97752710390784E-06"
+        ixz="0.0105420202714204"
+        iyy="0.099093405600997"
+        iyz="2.70409133808585E-05"
+        izz="0.0286993232146211" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_test2/meshes/link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_test2/meshes/link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4"
+    type="revolute">
+    <origin
+      xyz="-0.2861 -0.21517 -0.40615"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="link_3" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_5">
+    <inertial>
+      <origin
+        xyz="0.0321188646377532 -2.48787094503117E-06 0.0177529131614274"
+        rpy="0 0 0" />
+      <mass
+        value="0.547227875496273" />
+      <inertia
+        ixx="0.00144312568455859"
+        ixy="1.73908198767393E-09"
+        ixz="0.000346652240184518"
+        iyy="0.00135880558969515"
+        iyz="5.01170164771629E-09"
+        izz="0.00156981116864438" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_test2/meshes/link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_test2/meshes/link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_5"
+    type="revolute">
+    <origin
+      xyz="0.0015339 0 -0.60376"
+      rpy="0 1.5708 0" />
+    <parent
+      link="link_4" />
+    <child
+      link="link_5" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_6">
+    <inertial>
+      <origin
+        xyz="2.22044604925031E-16 -6.07153216591882E-18 0.0339196652959752"
+        rpy="0 0 0" />
+      <mass
+        value="0.149868074580642" />
+      <inertia
+        ixx="0.000136952298401618"
+        ixy="-2.79189612607986E-20"
+        ixz="2.70502249000901E-20"
+        iyy="0.000136913292133255"
+        iyz="3.85837026116944E-21"
+        izz="0.000207893490429411" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_test2/meshes/link_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fanuc_test2/meshes/link_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_6"
+    type="revolute">
+    <origin
+      xyz="0.1363 0 0"
+      rpy="3.1416 1.5708 0" />
+    <parent
+      link="link_5" />
+    <child
+      link="link_6" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>

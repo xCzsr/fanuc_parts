@@ -1,0 +1,14 @@
+To use the new program, type:
+
+   StreamITP <pos filename> <ip address> <joint/Cartesian> <joint num for jerk threshold>
+
+    The 3rd argument (joint) indicates the data in the dataFileName are in joint angles. If you want to use Cartesian, change the joint to Cartesian.
+    The 4th argument indicates the you want the PC program to print out J1 jerk threshold. You can change 1 to 2 - 6 to get jerk threshold from J2-J6.
+	However, one joint at a time.
+
+    Arguments 3 & 4 are optional, if you don’t type in these arguments, the default is reading joint angle and no threshold limit reading.
+
+Examples:
+	StreamITP curang.txt 127.0.0.2			-- Joint rep, no jerk limits printed
+	StreamITP curang.txt 127.0.0.2 Joint 3		-- Joint rep, J3 jerk limits printed
+	StreamITP curang.txt 127.0.0.2 Cartesian	-- Cartesian rep, no jerk limit printed
